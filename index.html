@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dog Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Dog Survey</h1>
+    <p id="description">Let's learn more about your dog! </p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" type="text" placeholder="Mary Smith" required/></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" type="email" placeholder="email@gmail.com" required/></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number">Your Dog's Age: <input id="number" type="number" min="0" max="30" placeholder="3"/></label>
+        <label id="dropdown-label" for="dropdown">Your Dog's Size:
+          <select id="dropdown">
+            <option value="small">Small (less than 35lbs)</option>
+            <option value="medium">Medium (35lbs - 55lbs)</option>
+            <option value="large">Large (more than 55lbs)</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Your Dog's Breed:</legend>
+        <label for="goldendoodle"><input id="goldendoodle" type="radio" value="goldendoodle" name="dog-breed" checked/> Goldendoodle</label>
+        <label for="golden-retriever"><input id="golden-retriever" type="radio" value="golden-retriever" name="dog-breed"/> Golden Retriever</label>
+        <label for="german-shepherd"><input id="german-shepherd" type="radio" value="german-shepherd" name="dog-breed"/> German Shepherd</label>
+        <label for="bulldog"><input id="bulldog" type="radio" value="bulldog" name="dog-breed"/> Bulldog</label>
+        <label for="beagle"><input id="beagle" type="radio" value="beagle" name="dog-breed"/> Beagle</label>
+        <label for="poodle"><input id="poodle" type="radio" value="poodle" name="dog-breed"/> Poodle</label>
+        <label for="chihuahua"><input id="chihuahua" type="radio" value="chihuahua" name="dog-breed"/> Chihuahua</label>
+        <label for="other"><input id="other" type="radio" value="other" name="dog-breed"/> Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your Dog's Favorite Activities:</legend>
+        <label for="walks"><input id="walks" type="checkbox" value="walks" name="walks"/> Taking Walks</label>
+        <label for="fetch"><input id="fetch" type="checkbox" value="fetch" name="fetch"/> Playing Fetch</label>
+        <label for="eating"><input id="eating" type="checkbox" value="eating" name="eating"/> Eating</label>
+        <label for="sleeping"><input id="sleeping" type="checkbox" value="sleeping" name="sleeping"/> Sleeping</label>
+        <label for="swimming"><input id="swimming" type="checkbox" value="swimming" name="swimming"/> Swimming</label>
+      </fieldset>
+      <fieldset>
+        <label id="comments-label" for="comments">Additional Comments:
+          <textarea id="comments"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input id="submit" type="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
